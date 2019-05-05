@@ -1,0 +1,65 @@
+{
+    "name": "front-end-scaffold",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "node ./node_modules/rimraf/bin.js ./wwwroot",
+        "build": "npm run build:prod",
+        "build:dev": "npm run clean && node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development",
+        "build:prod": "npm run clean && node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.prod.js --mode=production",
+        "start": "npm run clean && node ./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --mode=development --watch",
+        "watch": "npm run clean && node ./node_modules/webpack-cli/bin/cli.js --config webpack.config.dev.js --mode=development --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alumis/front-end-scaffold.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/alumis/front-end-scaffold/issues"
+    },
+    "homepage": "https://github.com/alumis/front-end-scaffold#readme",
+    "devDependencies": {
+        "@alumis/button": "^1.0.3",
+        "@alumis/cancellationtoken": "^1.0.4",
+        "@alumis/icons": "^1.0.0",
+        "@alumis/observables": "^1.0.48",
+        "@alumis/observables-dom": "^1.0.66",
+        "@alumis/observables-i18n": "^1.0.14",
+        "@alumis/semaphore": "^1.0.1",
+        "@alumis/spa": "^1.0.3",
+        "@alumis/textinput": "^1.0.3",
+        "@alumis/theme": "^1.0.8",
+        "@alumis/transitionasync": "^1.0.3",
+        "@alumis/utils": "^1.0.0",
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.4.0",
+        "@babel/plugin-proposal-class-properties": "^7.4.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/plugin-transform-react-jsx": "^7.3.0",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/preset-env": "^7.4.2",
+        "@babel/preset-typescript": "^7.3.3",
+        "babel-loader": "^8.0.5",
+        "css-loader": "^2.1.1",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.6.0",
+        "node-sass": "^4.11.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "postcss-loader": "^3.0.0",
+        "precss": "^4.0.0",
+        "regenerator-runtime": "^0.13.2",
+        "rimraf": "^2.6.3",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "terser-webpack-plugin": "^1.2.3",
+        "webpack": "^4.30.0",
+        "webpack-cli": "^3.3.2",
+        "webpack-dev-server": "^3.3.1"
+    },
+    "dependencies": {
+        "jsdom": "^15.0.0"
+    }
+}
