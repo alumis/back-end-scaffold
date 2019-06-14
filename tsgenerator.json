@@ -1,0 +1,10 @@
+{
+    "TypingsOutputPath": "ClientApp/typings",
+    "TypeScriptOutputPath": "Clientapp/src",
+    "Assemblies": [
+        {
+            "Path": "bin/Debug/netcoreapp2.2/Alumis.App.dll",
+            "TypingsFileName": "server-type.d.ts"
+        }
+    ]
+}
